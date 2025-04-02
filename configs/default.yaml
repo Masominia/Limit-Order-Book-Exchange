@@ -1,0 +1,35 @@
+# Sizes of the experiments. Market parameters are the defaults of engine/src/sim/params.rs
+# (one tick is one basis point of the starting price); any of them can be overridden under `market`.
+seed: 1
+market: {}
+
+fuzz_orders: 50000
+bench_orders: 2000000
+
+simulation_steps: 200000
+lag: 50
+populations:
+  noise only: {makers: 0, momentum: 0, value: 0}
+  noise + maker: {makers: 1, momentum: 0, value: 0}
+  noise + maker + value: {makers: 1, momentum: 0, value: 1}
+  all four: {makers: 1, momentum: 1, value: 1}
+
+profile_steps: 100000
+
+impact:
+  sizes: [5, 10, 20, 40, 80, 120, 160]
+  seeds: 2000
+  relax: 200
+
+execution:
+  size: 200
+  horizon: 200
+  seeds: 4000
+  schedules:
+    immediate: {schedule: immediate}
+    front-loaded, urgency 8: {schedule: frontloaded, urgency: 8}
+    front-loaded, urgency 4: {schedule: frontloaded, urgency: 4}
+    front-loaded, urgency 2: {schedule: frontloaded, urgency: 2}
+    equal slices: {schedule: twap}
+    volume profile: {schedule: vwap, depth: 2}
+    20% of volume: {schedule: pov, rate: 0.2}
