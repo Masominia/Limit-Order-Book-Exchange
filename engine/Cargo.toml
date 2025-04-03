@@ -1,0 +1,17 @@
+[package]
+name = "lobsim"
+version = "0.1.0"
+edition = "2021"
+description = "Limit order book exchange with trading agents and execution algorithms"
+license = "MIT"
+
+[lib]
+name = "lobsim"
+path = "src/lib.rs"
+
+[[bin]]
+name = "lobsim"
+path = "src/main.rs"
+
+[profile.release]
+opt-level = 3
