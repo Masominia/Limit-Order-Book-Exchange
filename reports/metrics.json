@@ -1,0 +1,375 @@
+{
+ "fuzz": {
+  "orders": 50000.0,
+  "trades": 28436.0,
+  "mismatches": 0.0,
+  "invariant_failures": 0.0
+ },
+ "populations": {
+  "noise only": {
+   "spread, ticks": 1.2581,
+   "depth near the touch, lots": 426.502615,
+   "volume per step, lots": 0.826715,
+   "volatility, ticks per step": 0.138745,
+   "variance ratio, 50 steps": 0.560777,
+   "excess kurtosis": 1.270256,
+   "order-flow autocorrelation": -0.006776,
+   "distance from value, ticks": 101.252809
+  },
+  "noise + maker": {
+   "spread, ticks": 1.254195,
+   "depth near the touch, lots": 476.45884,
+   "volume per step, lots": 0.82402,
+   "volatility, ticks per step": 0.131121,
+   "variance ratio, 50 steps": 0.593852,
+   "excess kurtosis": 0.884037,
+   "order-flow autocorrelation": -0.004044,
+   "distance from value, ticks": 76.052543
+  },
+  "noise + maker + value": {
+   "spread, ticks": 1.515605,
+   "depth near the touch, lots": 366.60205,
+   "volume per step, lots": 1.42903,
+   "volatility, ticks per step": 0.214803,
+   "variance ratio, 50 steps": 1.164519,
+   "excess kurtosis": 3.544305,
+   "order-flow autocorrelation": 0.14526,
+   "distance from value, ticks": 5.377795
+  },
+  "all four": {
+   "spread, ticks": 1.519,
+   "depth near the touch, lots": 364.913395,
+   "volume per step, lots": 1.45562,
+   "volatility, ticks per step": 0.218384,
+   "variance ratio, 50 steps": 1.182349,
+   "excess kurtosis": 4.543124,
+   "order-flow autocorrelation": 0.14825,
+   "distance from value, ticks": 5.461145
+  }
+ },
+ "profile": [
+  [
+   1.0,
+   26.1685
+  ],
+  [
+   2.0,
+   36.1176
+  ],
+  [
+   3.0,
+   38.20545
+  ],
+  [
+   4.0,
+   33.1695
+  ],
+  [
+   5.0,
+   28.5494
+  ],
+  [
+   6.0,
+   26.1005
+  ],
+  [
+   7.0,
+   23.8798
+  ],
+  [
+   8.0,
+   22.24205
+  ],
+  [
+   9.0,
+   20.17945
+  ],
+  [
+   10.0,
+   17.9644
+  ],
+  [
+   11.0,
+   16.1833
+  ],
+  [
+   12.0,
+   14.2816
+  ],
+  [
+   13.0,
+   13.3049
+  ],
+  [
+   14.0,
+   12.06505
+  ],
+  [
+   15.0,
+   10.9202
+  ],
+  [
+   16.0,
+   9.4121
+  ],
+  [
+   17.0,
+   8.58875
+  ],
+  [
+   18.0,
+   7.59335
+  ],
+  [
+   19.0,
+   6.582
+  ],
+  [
+   20.0,
+   6.0271
+  ],
+  [
+   21.0,
+   5.19765
+  ],
+  [
+   22.0,
+   4.8267
+  ],
+  [
+   23.0,
+   4.444
+  ],
+  [
+   24.0,
+   3.9932
+  ],
+  [
+   25.0,
+   3.44405
+  ],
+  [
+   26.0,
+   3.11865
+  ],
+  [
+   27.0,
+   2.83975
+  ],
+  [
+   28.0,
+   2.45415
+  ],
+  [
+   29.0,
+   2.3514
+  ],
+  [
+   30.0,
+   2.09105
+  ]
+ ],
+ "impact": {
+  "5.0": {
+   "cost, bp": 0.843198,
+   "se": 0.008902,
+   "mid move at once, bp": 0.105001,
+   "se ": 0.004783,
+   "mid move after 200 steps, bp": 0.044807,
+   "se  ": 0.102364,
+   "not filled": 0.0
+  },
+  "10.0": {
+   "cost, bp": 0.959355,
+   "se": 0.009527,
+   "mid move at once, bp": 0.246268,
+   "se ": 0.006115,
+   "mid move after 200 steps, bp": 0.062261,
+   "se  ": 0.10308,
+   "not filled": 0.0
+  },
+  "20.0": {
+   "cost, bp": 1.190585,
+   "se": 0.010589,
+   "mid move at once, bp": 0.430502,
+   "se ": 0.007245,
+   "mid move after 200 steps, bp": 0.140018,
+   "se  ": 0.104242,
+   "not filled": 0.0
+  },
+  "40.0": {
+   "cost, bp": 1.559564,
+   "se": 0.012434,
+   "mid move at once, bp": 0.74374,
+   "se ": 0.009289,
+   "mid move after 200 steps, bp": 0.340134,
+   "se  ": 0.108045,
+   "not filled": 0.0
+  },
+  "80.0": {
+   "cost, bp": 2.189044,
+   "se": 0.016752,
+   "mid move at once, bp": 1.312675,
+   "se ": 0.014211,
+   "mid move after 200 steps, bp": 0.679771,
+   "se  ": 0.112013,
+   "not filled": 0.0
+  },
+  "120.0": {
+   "cost, bp": 2.776321,
+   "se": 0.021157,
+   "mid move at once, bp": 1.907836,
+   "se ": 0.019363,
+   "mid move after 200 steps, bp": 1.016961,
+   "se  ": 0.115826,
+   "not filled": 1.0
+  },
+  "160.0": {
+   "cost, bp": 3.379727,
+   "se": 0.02557,
+   "mid move at once, bp": 2.612933,
+   "se ": 0.026463,
+   "mid move after 200 steps, bp": 1.23796,
+   "se  ": 0.11624,
+   "not filled": 6.0
+  }
+ },
+ "impact_exponent": 0.8621145439546498,
+ "frontier": {
+  "immediate": {
+   "cost, bp": 4.049521,
+   "standard error": 0.022735,
+   "risk, bp": 1.437869,
+   "child orders": 1.056,
+   "filled": 1.0
+  },
+  "front-loaded, urgency 8": {
+   "cost, bp": 3.344236,
+   "standard error": 0.019702,
+   "risk, bp": 1.246049,
+   "child orders": 77.0,
+   "filled": 1.0
+  },
+  "front-loaded, urgency 4": {
+   "cost, bp": 3.060792,
+   "standard error": 0.026462,
+   "risk, bp": 1.673582,
+   "child orders": 119.0,
+   "filled": 1.0
+  },
+  "front-loaded, urgency 2": {
+   "cost, bp": 2.834699,
+   "standard error": 0.035361,
+   "risk, bp": 2.236443,
+   "child orders": 163.0,
+   "filled": 1.0
+  },
+  "equal slices": {
+   "cost, bp": 2.820282,
+   "standard error": 0.043198,
+   "risk, bp": 2.732059,
+   "child orders": 200.0,
+   "filled": 1.0
+  },
+  "volume profile": {
+   "cost, bp": 2.729672,
+   "standard error": 0.042308,
+   "risk, bp": 2.675768,
+   "child orders": 170.0,
+   "filled": 1.0
+  },
+  "20% of volume": {
+   "cost, bp": 3.230038,
+   "standard error": 0.053866,
+   "risk, bp": 3.406776,
+   "child orders": 46.256,
+   "filled": 1.0
+  }
+ },
+ "checks": [
+  {
+   "area": "matching",
+   "check": "identical fills to the reference book",
+   "status": "PASS",
+   "detail": "50,000 random orders, 28,436 trades, 0 mismatches"
+  },
+  {
+   "area": "matching",
+   "check": "internal consistency after every order",
+   "status": "PASS",
+   "detail": "0 failures"
+  },
+  {
+   "area": "market",
+   "check": "book consistent, positions and cash net to zero, both sides quoted",
+   "status": "PASS",
+   "detail": "all populations"
+  },
+  {
+   "area": "market",
+   "check": "value traders tie the price to the fundamental value",
+   "status": "PASS",
+   "detail": "distance 76.1 ticks without, 5.4 with"
+  },
+  {
+   "area": "market",
+   "check": "the full population has fat tails and persistent order flow",
+   "status": "PASS",
+   "detail": "excess kurtosis 4.54, autocorrelation 0.15 (noise only: -0.01)"
+  },
+  {
+   "area": "market",
+   "check": "depth peaks away from the best price",
+   "status": "PASS",
+   "detail": "largest average depth 3 ticks from the mid price"
+  },
+  {
+   "area": "impact",
+   "check": "cost increases with size",
+   "status": "PASS",
+   "detail": "0.84 to 3.38 bp"
+  },
+  {
+   "area": "impact",
+   "check": "smallest order pays about half the spread",
+   "status": "PASS",
+   "detail": "0.84 bp against 0.76"
+  },
+  {
+   "area": "impact",
+   "check": "impact is concave in size",
+   "status": "PASS",
+   "detail": "cost above the half spread grows as size to the power 0.86"
+  },
+  {
+   "area": "impact",
+   "check": "part of the largest impact reverts",
+   "status": "PASS",
+   "detail": "47% of the immediate move remains after 200 steps"
+  },
+  {
+   "area": "execution",
+   "check": "every schedule completes the order",
+   "status": "PASS",
+   "detail": "lowest fill rate 1.0000"
+  },
+  {
+   "area": "execution",
+   "check": "slicing is cheaper than trading at once",
+   "status": "PASS",
+   "detail": "2.82 against 4.05 bp, 25.2 standard errors"
+  },
+  {
+   "area": "execution",
+   "check": "slicing is riskier than trading at once",
+   "status": "PASS",
+   "detail": "2.73 against 1.44 bp"
+  },
+  {
+   "area": "execution",
+   "check": "risk rises as urgency falls",
+   "status": "PASS",
+   "detail": "1.25, 1.67, 2.24, 2.73"
+  }
+ ]
+}
